@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Marvel';
+    src: url('../font/Marvel-Regular.eot');
+    src: local('Marvel'), local('Marvel-Regular'),
+    url('../font/Marvel-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Marvel-Regular.woff2') format('woff2'),
+    url('../font/Marvel-Regular.woff') format('woff'),
+    url('../font/Marvel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('../font/Marvel-Italic.eot');
+    src: local('Marvel Italic'), local('Marvel-Italic'),
+    url('../font/Marvel-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/Marvel-Italic.woff2') format('woff2'),
+    url('../font/Marvel-Italic.woff') format('woff'),
+    url('../font/Marvel-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('../font/Marvel-BoldItalic.eot');
+    src: local('Marvel Bold Italic'), local('Marvel-BoldItalic'),
+    url('../font/Marvel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../font/Marvel-BoldItalic.woff2') format('woff2'),
+    url('../font/Marvel-BoldItalic.woff') format('woff'),
+    url('../font/Marvel-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('../font/Marvel-Bold.eot');
+    src: local('Marvel Bold'), local('Marvel-Bold'),
+    url('../font/Marvel-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Marvel-Bold.woff2') format('woff2'),
+    url('../font/Marvel-Bold.woff') format('woff'),
+    url('../font/Marvel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#container {
+    display: flex;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: #333333;
+}
+
+a:visited {
+    color: #666666;
+    border-bottom: 1px solid;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    color: #000000;
+    background: #e1e1e1;
+}
+
+a:active {
+    color: #000000;
+}
+
+.dropbtn {
+
+    color: #000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+
+.send:hover {
+    background: #2196F3;
+    color: white;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.form-elements-wrapper {
+    display: block;
+}
+
+.checkbox-wrap{
+    float: left;
+    width: 50%;
+}
+
+.link a {
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Marvel";
+}
+
+.input-wrap label{
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Marvel";
+    text-align: left;
+}
+
+.title span{
+    font-size: 12px;
+    line-height: 24px;
+    color: #ff3333;
+    font-weight: bold;
+    font-family: "Hipstelvetica";
+}
+
+@media (min-width: 1240px) {
+    .main {
+        max-width: 1200px;
+        margin: 25px auto;
+    }
+
+    .block {
+        display: block;
+        float: left;
+        padding-bottom: 20px;
+        width: 50%;
+    }
+
+    .menu {
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .main {
+        margin: 25px 15px 0 15px;
+    }
+    .form-elements-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block {
+        display: block;
+        width: 100%;
+    }
+
+    .link {
+        order: 1;
+    }
+
+    .input-wrap {
+        order: 4;
+        margin: 15px 0;
+    }
+
+    .menu {
+        order: 2;
+        height: 150px
+    }
+
+    .accordionmenu{
+      order: 3
+    }
+
+    .button-wrap {
+        order: 5;
+        width: 100%;
+    }
+
+    .button-wrap .btn {
+        width: 100%;
+    }
+}

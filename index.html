@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links and form elemets</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="main">
+
+    <div class="title">
+        <span>h6:</span>Links and form elements
+    </div>
+
+    <div class="form-elements-wrapper ">
+
+        <div class="link block">
+            <a href="#">Default Link</a>
+        </div>
+
+        <div class="input-wrap block">
+            <div class="checkbox-wrap">
+                <div class="checkbox">
+                    <input type="checkbox" id="default-check" name="default-check">
+                    <label for="default-check">Default</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="active-checkbox" name="active-checkbox"
+                           checked>
+                    <label for="active-checkbox">Checked</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="dis-checkbox" name="dis-checkbox" disabled>
+                    <label for="dis-checkbox">Disabled</label>
+                </div>
+            </div>
+            <div class="radio-wrapper">
+                <div class="active-radio">
+                    <input type="radio" id="default-radio" name="default-radio" value="default">
+                    <label for="default-radio">Default</label>
+                </div>
+                <div class="active-radio">
+                    <input type="radio" id="checked-radio" name="checked-radio" value="Checked"
+                           checked>
+                    <label for="checked-radio">Checked</label>
+                </div>
+
+                <div class="disabled-radio">
+                    <input type="radio" id="dis-radio" name="dis-radio" value="Disabled" disabled>
+                    <label for="dis-radio">Disabled</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu block">
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                </div>
+            </div>
+       </div>
+
+      <div class="accordionmenu block">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+    </div>
+
+
+        <div class="button-wrap block">
+            <button class="btn send">SEND</button>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
